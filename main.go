@@ -26,8 +26,8 @@ func myServ(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("https://santiago.com/api", myServ)
-	err := http.ListenAndServe("https://santiago.com:8443", nil)
+	http.HandleFunc("https://err1.vercel.app/api", myServ)
+	err := http.ListenAndServe("https://err1.vercel.app:8443", nil)
 	if err != nil {
 		fmt.Printf("error: %s", err)
 	}
